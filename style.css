@@ -25,13 +25,17 @@ span{
     color: #ec8889;
     
 }
+h2{
+    margin: 10px auto auto 0px;
+}
 p{
     margin: 10px auto 10px auto;
 }
 .column{
-    margin: 10px auto 10px 20px;
+    margin: 10px 20px 10px 20px;
     display: flex;
     flex-direction: column;
+    align-items: center;
 
 }
 button{
@@ -51,19 +55,76 @@ button{
 
 }
 .social-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-
-
-}
-
-.social{
-    width: 40px;
-    height: 40px;
-    border-radius: 6px;
     display:flex;
     flex-direction: row;
-    font: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    background-color: #ec8889;
+    width: 100%;
 
+}
+.social{
+    color: black;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.social-fb{
+    width: 35px;
+    height: 35px;
+    border-radius: 30px;
+}
+.social-twitt{
+    width: 35px;
+    height: 35px;
+    border-radius: 30px;
+}
+.social-insta{
+    width: 35px;
+    height: 35px;
+    border-radius: 30px;
+    justify-content: flex-end;
+    border: 3px solid black;
+    justify-self: flex-end;
+    line-height: 38px;
+    
+}
+
+@media (min-width: 1440px){
+    body { 
+        height: 100vh;
+    }
+
+    .main{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        
+    }
+    .column{
+        display: flex;
+        margin: 50px auto 20px 20px;
+
+    }
+    .circular-image{
+        width: 280px;
+        height: 260px;
+        margin-top: 50px;
+
+    }
+    h1{
+        margin: 20px auto 10px 0px;
+        background-color: #ec8889;
+    }
+    p{
+        width: 500px;
+    }
+    }
+
+
+    /* .column:first-child{
+        background-color: #ec8889;
+        
+    } */
 }
